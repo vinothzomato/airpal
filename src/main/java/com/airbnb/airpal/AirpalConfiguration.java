@@ -44,7 +44,7 @@ public class AirpalConfiguration extends Configuration
     @Setter
     @JsonProperty
     @NotNull
-    private String prestoSchema = "default";
+    private String prestoSchema = "jumbo2";
 
     @Getter
     @Setter
