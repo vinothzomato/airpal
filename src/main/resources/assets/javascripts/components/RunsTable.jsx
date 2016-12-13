@@ -318,9 +318,9 @@ let CellRenderers = {
 
   started(cellData) {
     let m = moment.utc(cellData, 'x');
-    let utc = m.format();
+    let utc = m.utcOffset("+05:30").format();
     let human = m.format('lll');
-    return <span title={utc}>{human} UTC</span>;
+    return <span title={utc}>{human} IST</span>;
   }
 };
 
