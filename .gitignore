@@ -28,3 +28,6 @@ src/main/resources/assets/build/*
 
 # Airpal configuration
 reference.yml
+
+airpal.log
+src/main/resources/shiro_airpal_zomato.ini
