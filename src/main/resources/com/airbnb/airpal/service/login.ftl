@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Airpal Login</title>
+    <title>Jumbo Login</title>
 </head>
 <body>
     <div style="width: 30%; margin: 20px auto;">
