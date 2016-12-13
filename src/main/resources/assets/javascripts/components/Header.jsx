@@ -29,7 +29,7 @@ let Header = React.createClass({
     return (
       <header className='flex flex-row'>
         <div className='flex'>
-          <h4 className='brand'>Airpal</h4>
+          <h4 className='brand'>Jumbo</h4>
         </div>
         <div className='flex justify-flex-end menu'>
           <div className='flex flex-initial'>
