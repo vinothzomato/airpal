@@ -18,6 +18,6 @@ public class LogoutResource {
         if (currentUser.isAuthenticated()) {
             currentUser.logout();
         }
-        return Response.temporaryRedirect(URI.create("/login"));
+        return Response.temporaryRedirect(URI.create("/login")).build();
     }
 }
