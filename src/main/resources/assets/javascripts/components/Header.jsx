@@ -40,16 +40,18 @@ let Header = React.createClass({
             <i className='glyphicon glyphicon-lock' />
             {this.state.user.executionPermissions.accessLevel}
           </div>
-          <a href="/logout">
-            <div className='flex flex-initial menu'>
-              <i className='glyphicon glyphicon-off' />
-              Logout
-            </div>
-          </a>
+          <div className='flex flex-initial permissions' onClick={this.onLogoutClick}>
+            <i className='glyphicon glyphicon-off' />
+            Logout
+          </div>
         </div>
       </header>
     );
   },
+
+    onLogoutClick: function (event) {
+        window.location.href = "/logout";
+    },
 
   /* Store events */
   _onChange() {
