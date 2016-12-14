@@ -14,6 +14,7 @@ import com.airbnb.airpal.resources.SessionResource;
 import com.airbnb.airpal.resources.TablesResource;
 import com.airbnb.airpal.resources.UserResource;
 import com.airbnb.airpal.resources.UsersResource;
+import com.airbnb.airpal.resources.LogoutResource;
 import com.airbnb.airpal.resources.sse.SSEEventSourceServlet;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.google.inject.AbstractModule;
@@ -108,6 +109,7 @@ public abstract class AirpalApplicationBase<T extends AirpalConfiguration>
         environment.jersey().register(injector.getInstance(FilesResource.class));
         environment.jersey().register(injector.getInstance(ResultsPreviewResource.class));
         environment.jersey().register(injector.getInstance(S3FilesResource.class));
+        environment.jersey().register(injector.getInstance(LogoutResource.class));
 
         environment.jersey().register(injector.getInstance(AirpalUserFactory.class));
 

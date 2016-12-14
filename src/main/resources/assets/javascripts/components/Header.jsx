@@ -40,6 +40,12 @@ let Header = React.createClass({
             <i className='glyphicon glyphicon-lock' />
             {this.state.user.executionPermissions.accessLevel}
           </div>
+          <a href="/logout">
+            <div className='flex flex-initial menu'>
+              <i className='glyphicon glyphicon-off' />
+              Logout
+            </div>
+          </a>
         </div>
       </header>
     );
