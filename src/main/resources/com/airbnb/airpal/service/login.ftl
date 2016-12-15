@@ -1,27 +1,61 @@
 <#-- @ftlvariable name="" type="com.airbnb.airpal.service.LoginView" -->
 
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Jumbo Login</title>
-</head>
+<style>
+
+    form {
+        border: 3px solid #f1f1f1;
+    }
+
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+
+    .container {
+        padding: 16px;
+    }
+</style>
 <body>
-    <div style="width: 30%; margin: 20px auto;">
-        <form name="login" action="" method="POST">
-            <fieldset>
-                <div class="form-group">
-                    <input class="form-control" placeholder="Username or Email" name="username" type="text">
-                </div>
-                <div class="form-group">
-                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input name="rememberMe" type="checkbox" value="true" checked="checked"> Remember Me
-                    </label>
-                </div>
-                <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
-            </fieldset>
-        </form>
-    </div>
+<div id="parent" style="width: 350px; margin: 20px auto;">
+    <form name="login" action="" method="POST">
+        <div class="imgcontainer">
+            <h2> Jumbo Login </h2>
+        </div>
+
+        <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username or Email" name="username" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Login</button>
+            <input name="rememberMe" type="checkbox" checked="checked"> Remember me
+        </div>
+
+    </form>
+</div>
+
 </body>
 </html>
