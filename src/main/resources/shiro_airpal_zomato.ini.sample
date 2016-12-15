@@ -35,6 +35,7 @@ allowAllFilter.loginUrl = /login
 builtInCacheManager = org.apache.shiro.cache.MemoryConstrainedCacheManager
 securityManager.cacheManager = $builtInCacheManager
 securityManager.sessionManager = $sessionManager
+securityManager.sessionManager.globalSessionTimeout = 172800000
 
 [users]
 [roles]
